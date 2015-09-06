@@ -10,15 +10,20 @@ To work on this project you will need to do the following.
 
    This needs to be done only once per account per machine.
 
-3. Clone the repository using #‚Äùclone‚Äù == copy onto your computer
+3. Clone the repository using 
 
    git clone git@github.com:jayannee/zurich
+   
+   Note: `Äùclone'ù == copy onto your computer
+
 
 Files will go into the zurich/ directory.
 
 You can update from the server at any time by typing
 
-       git pull  #‚Äùpull‚Äù is download
+       git pull  
+       
+       Note: Äù`pull' is download
 
 inside the zurich/ directory.
 
@@ -38,10 +43,12 @@ inside the zurich/ directory.
        git add myfile
 
 7. When you want to send your current version to the server: 
-    # e.g. upload a file to the github requires both these steps
+    e.g. upload a file to the github requires both these steps
 
        git commit -am "short message"
-       git push origin master   #‚Äùpush‚Äù == upload
+       git push origin master   
+       
+       Note: `push'Äù == upload
 
 8. A useful command is
 
