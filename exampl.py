@@ -11,13 +11,14 @@ def read(band):
     h = h.partition('EXPTIME =')[2]
     h = h.partition('/')[0]
     x /= int(h)
-#    lo,hi = np.percentile(x,2),np.percentile(x,99)
+#    lo,hi = np.percentile(x,2),np.percentile(x,99) #non-linear
 #    print(band,lo,hi)
-    lo,hi = 0,0.01    
-    x = np.clip(x,lo,hi)
+    lo,hi = 0,0.01    #linear stretch so UV is faint
+    x = np.clip(x,lo,hi) #for each pix, clip betw. hi & lo
     
 #  normalize to 1.0 
     x = 0.01 + 0.99*(x-lo)/(hi-lo)
+     #    x = (x-lo)/(hi-lo)
     
     #grab size of image W; w == white == grey
     W = len(x)
