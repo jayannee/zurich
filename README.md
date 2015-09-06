@@ -48,7 +48,7 @@ inside the zurich/ directory.
        git commit -am "short message"
        git push origin master   
        
-       Note: `push'€ == upload
+       Note: "push"€ == upload
 
 8. A useful command is
 
