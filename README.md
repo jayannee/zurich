@@ -10,7 +10,7 @@ To work on this project you will need to do the following.
 
    This needs to be done only once per account per machine.
 
-3. Clone the repository using
+3. Clone the repository using #”clone” == copy onto your computer
 
    git clone git@github.com:jayannee/zurich
 
@@ -18,7 +18,7 @@ Files will go into the zurich/ directory.
 
 You can update from the server at any time by typing
 
-       git pull
+       git pull  #”pull” is download
 
 inside the zurich/ directory.
 
@@ -37,10 +37,11 @@ inside the zurich/ directory.
 
        git add myfile
 
-7. When you want to send your current version to the server:
+7. When you want to send your current version to the server: 
+    # e.g. upload a file to the github requires both these steps
 
        git commit -am "short message"
-       git push origin master
+       git push origin master   #”push” == upload
 
 8. A useful command is
 
