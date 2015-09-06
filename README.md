@@ -14,7 +14,7 @@ To work on this project you will need to do the following.
 
    git clone git@github.com:jayannee/zurich
    
-   Note: `Äùclone'ù == copy onto your computer
+   Note: 'clone' == copy onto your computer
 
 
 Files will go into the zurich/ directory.
@@ -23,7 +23,7 @@ You can update from the server at any time by typing
 
        git pull  
        
-       Note: Äù`pull' is download
+       Note: 'pull' is download
 
 inside the zurich/ directory.
 
@@ -48,7 +48,7 @@ inside the zurich/ directory.
        git commit -am "short message"
        git push origin master   
        
-       Note: "push"Äù == upload
+       Note: 'push' == upload
 
 8. A useful command is
 
