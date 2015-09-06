@@ -37,7 +37,8 @@ inside the zurich/ directory.
 
        git add myfile
 
-7. When you want to send your current version to the server:
+7. When you want to send your current version to the server: 
+    # e.g. upload a file to the github requires both these steps
 
        git commit -am "short message"
        git push origin master   #”push” == upload
