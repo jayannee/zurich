@@ -4,6 +4,12 @@ import numpy as np
 from matplotlib import pyplot as pl
 from astropy.io import fits
 
+def logstretch(x): # doesn't work yet
+    x = x + 1e-9
+    x = np.log(x)
+    x = x/np.amax(x)
+    return x
+
 # function to read fits files
 def read(band):
     hdulist = fits.open('cps'+band+'J14.fits')
@@ -24,6 +30,10 @@ def read(band):
 #  normalize to 1.0 
     x = 0.01 + 0.99*(x-lo)/(hi-lo)
      #    x = (x-lo)/(hi-lo)
+    
+# stretch
+    x = x**.5
+#    x = logstretch(x)
     
     #grab size of image W; w == white == grey
     W = len(x)
@@ -110,8 +120,8 @@ print('img range',lo,hi)
 # Applied to the linear stretch, linear occurred per filter on reading in
 
 # square root start
-img /= hi #if overshooting - deprecated by screen algorithm
-img = img**.5  #square root
+#img /= hi #if overshooting - deprecated by screen algorithm
+#img = img**.5  #square root
 
 
 #log start
